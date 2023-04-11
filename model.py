@@ -1,6 +1,5 @@
 import torch
 import streamlit as st
-import cv2
 
 
 @st.cache(allow_output_mutation=True)
