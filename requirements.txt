@@ -1,0 +1,6 @@
+opencc-python
+numpy
+pandas
+customtkinter
+tkinter
+PIL
