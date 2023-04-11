@@ -4,6 +4,7 @@ from customtkinter import CTkComboBox
 from PIL import Image, ImageTk
 
 from constant import AUDI, CASCADE_FACE_PATH
+from model import count_people_on_frame
 
 
 cascade = cv2.CascadeClassifier(CASCADE_FACE_PATH)
@@ -87,8 +88,8 @@ class MainWindow:
 
 
     def click_people(self):
-        (one, two) = (cascade.detectMultiScale(cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)) for fr in self.current_frames)
-        print("One: {}, Two: {}".format(len(one), len(two)))
+        (one, two) = count_people_on_frame(self.current_frames)
+        print("One: {}, Two: {}".format(one, two))
 
 
     def mainloop(self):
