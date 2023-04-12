@@ -3,11 +3,8 @@ import customtkinter as ctk
 from customtkinter import CTkComboBox
 from PIL import Image, ImageTk
 
-from constant import AUDI, CASCADE_FACE_PATH
+from constant import AUDI
 from model import count_people_on_frame
-
-
-cascade = cv2.CascadeClassifier(CASCADE_FACE_PATH)
 
 
 class MainWindow:
