@@ -4,7 +4,7 @@ from customtkinter import CTkComboBox
 from PIL import Image, ImageTk
 
 from constant import AUDI
-from model import count_people_on_frame
+from model import count_people_on_audit
 
 
 class MainWindow:
@@ -85,8 +85,8 @@ class MainWindow:
 
 
     def click_people(self):
-        (one, two) = count_people_on_frame(self.current_frames)
-        print("One: {}, Two: {}".format(one, two))
+        cnt_people = count_people_on_audit(self.current_frames)
+        print("Количество людей в аудитории: {}".format(cnt_people))
 
 
     def mainloop(self):
