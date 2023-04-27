@@ -1,6 +1,6 @@
 import paho.mqtt.client as mqtt
 from datetime import datetime
-import json
+import time
 
 class MQTTClient():
 
@@ -18,9 +18,13 @@ class MQTTClient():
     def publish_msg(self, data):
         try:
             while self.connected != True:
-                self.client.publish(json.dumps(data))
+                for nameNode, value in data.items():
+                    self.client.publish(nameNode, value)
 
-        except KeyboardInterrupt:
+                print("Сообщение отправлено")
+                time.sleep(10)
+
+        except KeyboardInterrupt as ki:
             self.client.disconnect()
             self.client.loop_stop()
 
@@ -36,14 +40,14 @@ class MQTTClient():
 mqttclient = MQTTClient(
     broker_address='dev.rightech.io',
     port=1883,
-    client_id='ms_sasha_horan-bbyve9'
+    client_id='andrey01109-drb9hf'
 )
 
 data = {
     'base/state/datetime':
         datetime.now().date().strftime("%d-%m-%y") + " " + datetime.now().time().strftime("%H:%M:%S"),
-    'base/state/auditorium': 317,
-    'base/state/num_person': 10
+    'base/state/audit': 317,
+    'base/state/numperson': 10
 }
 
 mqttclient.publish_msg(data)
