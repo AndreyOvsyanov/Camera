@@ -1,3 +1,5 @@
+import random
+
 import paho.mqtt.client as mqtt
 from datetime import datetime
 import time
@@ -15,18 +17,20 @@ class MQTTClient():
         self.client.connect(broker_address, port=port)
         self.client.loop_start()
 
+
     def publish_msg(self, data):
         try:
-            while self.connected != True:
+            if not self.connected:
                 for nameNode, value in data.items():
                     self.client.publish(nameNode, value)
 
                 print("Сообщение отправлено")
-                time.sleep(10)
+
 
         except KeyboardInterrupt as ki:
             self.client.disconnect()
             self.client.loop_stop()
+
 
     def on_connect(self, client, userdata, flags, rc):
         if rc == 0:
@@ -40,14 +44,16 @@ class MQTTClient():
 mqttclient = MQTTClient(
     broker_address='dev.rightech.io',
     port=1883,
-    client_id='andrey01109-drb9hf'
+    client_id='ovsyanov_andrey-a9wes8'
 )
 
-data = {
-    'base/state/datetime':
-        datetime.now().date().strftime("%d-%m-%y") + " " + datetime.now().time().strftime("%H:%M:%S"),
-    'base/state/audit': 317,
-    'base/state/numperson': 10
-}
+while True:
+    data = {
+        'base/state/datetime':
+            datetime.now().date().strftime("%d-%m-%y") + " " + datetime.now().time().strftime("%H:%M:%S"),
+        'base/state/audit': random.choice([317, 319, 321]),
+        'base/state/numperson': random.choice([10, 15, 30, 45, 90])
+    }
 
-mqttclient.publish_msg(data)
+    mqttclient.publish_msg(data)
+    time.sleep(10)
