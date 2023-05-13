@@ -1,7 +1,7 @@
-import cv2
+import base
 
 from typing import List
-from helpers import get_name_folder, SHAPE
+from plugins import get_name_folder, SHAPE
 
 class VideoWriter:
     def __init__(self, videos: List[cv2.VideoCapture]):

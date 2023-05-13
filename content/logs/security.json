@@ -1,4 +1,4 @@
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2NDUyYzE0MzM5OTMyNTgyZWE3NWVkYmUiLCJzdWIiOiI2NDUyN2UwMWZlODNiM2JlMDYxOWEzYTUiLCJncnAiOiI2NDUyN2UwMWZlODNiM2JlMDYxOWEzYTQiLCJvcmciOiI2NDUyN2UwMWZlODNiM2JlMDYxOWEzYTQiLCJsaWMiOiI1ZDNiNWZmMDBhMGE3ZjMwYjY5NWFmZTMiLCJ1c2ciOiJhcGkiLCJmdWxsIjpmYWxzZSwicmlnaHRzIjoxLjUsImlhdCI6MTY4MzE0NTAyNywiZXhwIjoxNjg2OTQ5MjAwfQ.lAm7Q7aY_hQ35Ie5gpYdhgqVY4APKjU9OmvbQN37HIA",
-    "path": "https://dev.rightech.io/api/v1/objects/6452d05ffe83b3be0619a3de/packets?withChildGroups=true&ofType=telemetry&snaps=true&nolimit=true&streamed=true&from=1683147600000&to=1683233999999&db=pgts"
+    "path": "https://dev.rightech.io/api/v1/objects/645f857223ae4a72e8939590/packets?withChildGroups=true&ofType=telemetry&snaps=true&nolimit=true&streamed=true&from=1683925200000&to=1684011599999&db=pgts"
 }

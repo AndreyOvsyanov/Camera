@@ -44,7 +44,7 @@ class MQTTClient():
 mqttclient = MQTTClient(
     broker_address='dev.rightech.io',
     port=1883,
-    client_id='ovsyanov_andrey-a9wes8'
+    client_id='ovsyanov_andrey-1n3prf'
 )
 
 while True:
@@ -56,4 +56,4 @@ while True:
     }
 
     mqttclient.publish_msg(data)
-    time.sleep(10)
+    time.sleep(2)
