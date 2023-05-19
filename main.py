@@ -1,10 +1,16 @@
+import threading
+import time
+
 import cv2
 import customtkinter as ctk
 from customtkinter import CTkComboBox
 from PIL import Image, ImageTk
+from datetime import datetime
 
 from constant import AUDI
 from model import count_people_on_audit
+from analytics import get_employment
+from rightech import mqttclient
 
 
 class MainWindow:
@@ -25,14 +31,26 @@ class MainWindow:
         self._container = ctk.CTkFrame(self._window)
         self._container.pack(side=ctk.LEFT, expand=True)
 
+        # Выбрать аудиторию
         self.auditoriums = CTkComboBox(master=self._container, values=list(AUDI.keys()), font=("Courier", 20, "bold"))
         self.auditoriums.pack(pady=10)
 
+        # Действие для обработки
+        # Бесконечное функция на подсчёт людей
+        self.action = False
+        threading.Thread(target=self.click_people).start()
+
+        # Передать видеопоток в окошко по конкретной аудитории
         self.button_check = ctk.CTkButton(master=self._container, text="Посмотреть", command=self.click_audi)
         self.button_check.pack(pady=10)
 
-        self.button_post = ctk.CTkButton(master=self._container, text="Получить людей", command=self.click_people)
+        # Окончание работы подсчёта
+        self.button_post = ctk.CTkButton(master=self._container, text="Закончить", command=self.click_end)
         self.button_post.pack(pady=10)
+
+        # Получить статистику по насчитанным данным
+        self.button_stat = ctk.CTkButton(master=self._container, text="Получить статистику", command=self.get_stat)
+        self.button_stat.pack(pady=10)
 
         self.camera_streams = []
         self.labelsmain = []
@@ -70,23 +88,49 @@ class MainWindow:
                 (cap.release for cap in self.caps)
 
 
-
     def click_audi(self):
         self._flags = (False for _ in range(2))
-        auditorium = self.auditoriums.get()
+        self.auditorium = self.auditoriums.get()
+
         path = "content/videos/"
-
-        cmrs = AUDI.get(auditorium)
-
+        cmrs = AUDI.get(self.auditorium)
         self.caps = (cv2.VideoCapture(path + cmrs[0]), cv2.VideoCapture(path + cmrs[1]))
-        print("Connection success, please show {} auditorium >> ".format(auditorium))
+
+        self.action = True
+
+        print("Connection success, please show {} auditorium >> ".format(self.auditorium))
         self._flags = (True for _ in range(2))
         self.show_stream()
 
 
     def click_people(self):
-        cnt_people = count_people_on_audit(self.current_frames)
-        print("Количество людей в аудитории: {}".format(cnt_people))
+        while self.action:
+            if self.current_frames:
+                cnt_people = count_people_on_audit(self.current_frames)
+
+                current_date = datetime.now().date().strftime("%d-%m-%y") + " " + datetime.now().time().strftime("%H:%M:%S")
+                object = {
+                    'base/state/datetime': current_date,
+                    'base/state/audit': self.auditorium,
+                    'base/state/numperson': cnt_people
+                }
+
+                mqttclient.publish_msg(object)
+
+            print("Количество людей в аудитории: {}".format(cnt_people))
+            time.sleep(2)
+
+        time.sleep(0.125)
+        self.click_people()
+
+
+    def click_end(self):
+        self.action = False
+
+
+    def get_stat(self):
+        employment = get_employment()
+        employment.to_csv('employment.csv', index=False)
 
 
     def mainloop(self):

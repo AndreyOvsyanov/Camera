@@ -24,9 +24,6 @@ class MQTTClient():
                 for nameNode, value in data.items():
                     self.client.publish(nameNode, value)
 
-                print("Сообщение отправлено")
-
-
         except KeyboardInterrupt as ki:
             self.client.disconnect()
             self.client.loop_stop()
@@ -44,16 +41,5 @@ class MQTTClient():
 mqttclient = MQTTClient(
     broker_address='dev.rightech.io',
     port=1883,
-    client_id='ovsyanov_andrey-1n3prf'
+    client_id='ms_sasha_horan-fkzxsb'
 )
-
-while True:
-    data = {
-        'base/state/datetime':
-            datetime.now().date().strftime("%d-%m-%y") + " " + datetime.now().time().strftime("%H:%M:%S"),
-        'base/state/audit': random.choice([317, 319, 321]),
-        'base/state/numperson': random.choice([10, 15, 30, 45, 90])
-    }
-
-    mqttclient.publish_msg(data)
-    time.sleep(2)

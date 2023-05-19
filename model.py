@@ -1,7 +1,7 @@
 import torch
 import streamlit as st
 
-from data.Camera.information.base import valid_count_people
+from information.base import valid_count_people
 
 @st.cache(allow_output_mutation=True)
 def load_model_yolov5():
@@ -15,7 +15,6 @@ model = load_model_yolov5()
 
 
 def count_people_on_audit(imgs):
-
     # Работа с 2-мя изображениями
     imgs_valid = valid_count_people(imgs)
 

@@ -5,6 +5,9 @@ from data import refresh_api
 
 def valid_employment(sorted_logs):
 
+    for log in sorted_logs:
+        print(log)
+
     logs = {
         'Datetime': [],
         'Auditorium': [],
