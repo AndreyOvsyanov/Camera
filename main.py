@@ -5,12 +5,12 @@ import cv2
 import customtkinter as ctk
 from customtkinter import CTkComboBox
 from PIL import Image, ImageTk
-from datetime import datetime
 
 from constant import AUDI
 from model import count_people_on_audit
 from analytics import get_employment
 from rightech import mqttclient
+from information.plugins import init_security, get_current_datetime
 
 
 class MainWindow:
@@ -108,7 +108,7 @@ class MainWindow:
             if self.current_frames:
                 cnt_people = count_people_on_audit(self.current_frames)
 
-                current_date = datetime.now().date().strftime("%d-%m-%y") + " " + datetime.now().time().strftime("%H:%M:%S")
+                current_date = get_current_datetime()
                 object = {
                     'base/state/datetime': current_date,
                     'base/state/audit': self.auditorium,
@@ -130,13 +130,16 @@ class MainWindow:
 
     def get_stat(self):
         employment = get_employment()
-        employment.to_csv('employment.csv', index=False)
+        employment.to_csv('employment.csv', mode='a', index=False, header=False)
 
 
     def mainloop(self):
         self._window.mainloop()
 
 
+
+
+init_security()
 root = ctk.CTk()
 root.geometry("720x640")
 root.grid()
