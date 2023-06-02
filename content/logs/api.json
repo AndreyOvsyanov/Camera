@@ -1,12 +1,21 @@
 [
     {
+        "_bot": false,
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "online": true,
+        "time": 1685382788785,
+        "_ts": 1685382788785626,
+        "_id": "1685382788785626",
+        "_t": "p"
+    },
+    {
         "_lic": "5d3b5ff00a0a7f30b695afe3",
         "topic": "base/state/datetime",
-        "payload": "20-05-23 21:36:29",
-        "Datetime": "20-05-23 21:36:29",
-        "time": 1684607786659,
-        "_ts": 1684607786659961,
-        "_id": "1684607786659961",
+        "payload": "29-05-23 20:54:15",
+        "Datetime": "29-05-23 20:54:15",
+        "time": 1685382855617,
+        "_ts": 1685382855617500,
+        "_id": "1685382855617500",
         "_t": "p"
     },
     {
@@ -14,99 +23,9 @@
         "topic": "base/state/audit",
         "payload": "317",
         "Auditorium": 317,
-        "time": 1684607786728,
-        "_ts": 1684607786728178,
-        "_id": "1684607786728178",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/numperson",
-        "payload": "6",
-        "NumPerson": 6,
-        "time": 1684607786729,
-        "_ts": 1684607786729081,
-        "_id": "1684607786729081",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/datetime",
-        "payload": "20-05-23 21:36:32",
-        "Datetime": "20-05-23 21:36:32",
-        "time": 1684607789661,
-        "_ts": 1684607789661168,
-        "_id": "1684607789661168",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/audit",
-        "payload": "321",
-        "Auditorium": 321,
-        "time": 1684607789700,
-        "_ts": 1684607789699999,
-        "_id": "1684607789699999",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/numperson",
-        "payload": "6",
-        "NumPerson": 6,
-        "time": 1684607789700,
-        "_ts": 1684607789700899,
-        "_id": "1684607789700899",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/datetime",
-        "payload": "20-05-23 21:36:35",
-        "Datetime": "20-05-23 21:36:35",
-        "time": 1684607793181,
-        "_ts": 1684607793181301,
-        "_id": "1684607793181301",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/audit",
-        "payload": "321",
-        "Auditorium": 321,
-        "time": 1684607793191,
-        "_ts": 1684607793191025,
-        "_id": "1684607793191025",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/numperson",
-        "payload": "6",
-        "NumPerson": 6,
-        "time": 1684607793193,
-        "_ts": 1684607793193265,
-        "_id": "1684607793193265",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/datetime",
-        "payload": "20-05-23 21:36:38",
-        "Datetime": "20-05-23 21:36:38",
-        "time": 1684607796160,
-        "_ts": 1684607796160044,
-        "_id": "1684607796160044",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/audit",
-        "payload": "321",
-        "Auditorium": 321,
-        "time": 1684607796235,
-        "_ts": 1684607796235079,
-        "_id": "1684607796235079",
+        "time": 1685382855677,
+        "_ts": 1685382855677364,
+        "_id": "1685382855677364",
         "_t": "p"
     },
     {
@@ -114,53 +33,399 @@
         "topic": "base/state/numperson",
         "payload": "5",
         "NumPerson": 5,
-        "time": 1684607796236,
-        "_ts": 1684607796236160,
-        "_id": "1684607796236160",
+        "time": 1685382855678,
+        "_ts": 1685382855678407,
+        "_id": "1685382855678407",
         "_t": "p"
     },
     {
         "_lic": "5d3b5ff00a0a7f30b695afe3",
         "topic": "base/state/datetime",
-        "payload": "20-05-23 21:36:41",
-        "Datetime": "20-05-23 21:36:41",
-        "time": 1684607799040,
-        "_ts": 1684607799040150,
-        "_id": "1684607799040150",
+        "payload": "29-05-23 20:54:17",
+        "Datetime": "29-05-23 20:54:17",
+        "time": 1685382857797,
+        "_ts": 1685382857797227,
+        "_id": "1685382857797227",
         "_t": "p"
     },
     {
         "_lic": "5d3b5ff00a0a7f30b695afe3",
         "topic": "base/state/audit",
-        "payload": "321",
-        "Auditorium": 321,
-        "time": 1684607799100,
-        "_ts": 1684607799100073,
-        "_id": "1684607799100073",
-        "_t": "p"
-    },
-    {
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/numperson",
-        "payload": "5",
-        "NumPerson": 5,
-        "time": 1684607799101,
-        "_ts": 1684607799101212,
-        "_id": "1684607799101212",
-        "_t": "p"
-    },
-    {
-        "_bot": false,
-        "_lic": "5d3b5ff00a0a7f30b695afe3",
-        "topic": "base/state/numperson",
-        "online": true,
-        "payload": "6",
-        "Datetime": "20-05-23 20:59:06",
-        "NumPerson": 6,
+        "payload": "317",
         "Auditorium": 317,
-        "time": 1684605543601,
-        "_ts": 1684605543601100,
-        "_id": "1684605543601100",
-        "_t": "s"
+        "time": 1685382857857,
+        "_ts": 1685382857857195,
+        "_id": "1685382857857195",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "6",
+        "NumPerson": 6,
+        "time": 1685382857858,
+        "_ts": 1685382857858175,
+        "_id": "1685382857858175",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:21",
+        "Datetime": "29-05-23 20:54:21",
+        "time": 1685382861180,
+        "_ts": 1685382861180686,
+        "_id": "1685382861180686",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "319",
+        "Auditorium": 319,
+        "time": 1685382861197,
+        "_ts": 1685382861197281,
+        "_id": "1685382861197281",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "2",
+        "NumPerson": 2,
+        "time": 1685382861198,
+        "_ts": 1685382861198288,
+        "_id": "1685382861198288",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:23",
+        "Datetime": "29-05-23 20:54:23",
+        "time": 1685382863333,
+        "_ts": 1685382863333289,
+        "_id": "1685382863333289",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "319",
+        "Auditorium": 319,
+        "time": 1685382863417,
+        "_ts": 1685382863417252,
+        "_id": "1685382863417252",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "2",
+        "NumPerson": 2,
+        "time": 1685382863418,
+        "_ts": 1685382863418237,
+        "_id": "1685382863418237",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:25",
+        "Datetime": "29-05-23 20:54:25",
+        "time": 1685382865517,
+        "_ts": 1685382865517817,
+        "_id": "1685382865517817",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "319",
+        "Auditorium": 319,
+        "time": 1685382865577,
+        "_ts": 1685382865577368,
+        "_id": "1685382865577368",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "2",
+        "NumPerson": 2,
+        "time": 1685382865578,
+        "_ts": 1685382865578242,
+        "_id": "1685382865578242",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:29",
+        "Datetime": "29-05-23 20:54:29",
+        "time": 1685382869825,
+        "_ts": 1685382869825109,
+        "_id": "1685382869825109",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "321",
+        "Auditorium": 321,
+        "time": 1685382869893,
+        "_ts": 1685382869893447,
+        "_id": "1685382869893447",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "9",
+        "NumPerson": 9,
+        "time": 1685382869894,
+        "_ts": 1685382869894380,
+        "_id": "1685382869894380",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:31",
+        "Datetime": "29-05-23 20:54:31",
+        "time": 1685382871997,
+        "_ts": 1685382871997207,
+        "_id": "1685382871997207",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "321",
+        "Auditorium": 321,
+        "time": 1685382872057,
+        "_ts": 1685382872057378,
+        "_id": "1685382872057378",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "10",
+        "NumPerson": 10,
+        "time": 1685382872058,
+        "_ts": 1685382872058521,
+        "_id": "1685382872058521",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:36",
+        "Datetime": "29-05-23 20:54:36",
+        "time": 1685382876065,
+        "_ts": 1685382876065143,
+        "_id": "1685382876065143",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382876141,
+        "_ts": 1685382876141497,
+        "_id": "1685382876141497",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "9",
+        "NumPerson": 9,
+        "time": 1685382876142,
+        "_ts": 1685382876142647,
+        "_id": "1685382876142647",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:38",
+        "Datetime": "29-05-23 20:54:38",
+        "time": 1685382878469,
+        "_ts": 1685382878469872,
+        "_id": "1685382878469872",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382878471,
+        "_ts": 1685382878471832,
+        "_id": "1685382878471832",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "1",
+        "NumPerson": 1,
+        "time": 1685382878472,
+        "_ts": 1685382878472883,
+        "_id": "1685382878472883",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:40",
+        "Datetime": "29-05-23 20:54:40",
+        "time": 1685382880657,
+        "_ts": 1685382880657485,
+        "_id": "1685382880657485",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382880713,
+        "_ts": 1685382880713311,
+        "_id": "1685382880713311",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "1",
+        "NumPerson": 1,
+        "time": 1685382880714,
+        "_ts": 1685382880714209,
+        "_id": "1685382880714209",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:42",
+        "Datetime": "29-05-23 20:54:42",
+        "time": 1685382882921,
+        "_ts": 1685382882921371,
+        "_id": "1685382882921371",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382882977,
+        "_ts": 1685382882977330,
+        "_id": "1685382882977330",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "1",
+        "NumPerson": 1,
+        "time": 1685382882978,
+        "_ts": 1685382882978440,
+        "_id": "1685382882978440",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:45",
+        "Datetime": "29-05-23 20:54:45",
+        "time": 1685382885161,
+        "_ts": 1685382885161481,
+        "_id": "1685382885161481",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382885257,
+        "_ts": 1685382885257332,
+        "_id": "1685382885257332",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "1",
+        "NumPerson": 1,
+        "time": 1685382885258,
+        "_ts": 1685382885258593,
+        "_id": "1685382885258593",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:47",
+        "Datetime": "29-05-23 20:54:47",
+        "time": 1685382887393,
+        "_ts": 1685382887393194,
+        "_id": "1685382887393194",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382887453,
+        "_ts": 1685382887453295,
+        "_id": "1685382887453295",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "1",
+        "NumPerson": 1,
+        "time": 1685382887454,
+        "_ts": 1685382887454259,
+        "_id": "1685382887454259",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/datetime",
+        "payload": "29-05-23 20:54:49",
+        "Datetime": "29-05-23 20:54:49",
+        "time": 1685382889633,
+        "_ts": 1685382889633192,
+        "_id": "1685382889633192",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/audit",
+        "payload": "217",
+        "Auditorium": 217,
+        "time": 1685382889697,
+        "_ts": 1685382889697186,
+        "_id": "1685382889697186",
+        "_t": "p"
+    },
+    {
+        "_lic": "5d3b5ff00a0a7f30b695afe3",
+        "topic": "base/state/numperson",
+        "payload": "1",
+        "NumPerson": 1,
+        "time": 1685382889698,
+        "_ts": 1685382889698126,
+        "_id": "1685382889698126",
+        "_t": "p"
     }
 ]

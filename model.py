@@ -1,8 +1,6 @@
 import torch
 import streamlit as st
 
-from information.base import valid_count_people
-
 @st.cache(allow_output_mutation=True)
 def load_model_yolov5():
     # Model
@@ -14,11 +12,10 @@ def load_model_yolov5():
 model = load_model_yolov5()
 
 
-def count_people_on_audit(imgs):
-    # Работа с 2-мя изображениями
-    imgs_valid = valid_count_people(imgs)
+def count_people_on_audit(img):
 
-    datas = map(lambda img: model(img).pandas().xyxy[0], imgs_valid)
-    left, middle_one, middle_two, right = [len(data[data.name == 'person']) for data in datas]
+    # Получение данных по всем объектам в аудитории
+    objects = model(img).pandas().xyxy[0]
 
-    return left + max(middle_one, middle_two) + right
+    # Отбираем только людей
+    return len(objects[objects.name == 'person'])

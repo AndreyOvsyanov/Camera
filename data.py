@@ -11,8 +11,8 @@ class ApiRightech:
     def init_security(self):
         with open('content/logs/security.json') as file:
             security = json.loads(file.read())
-            self.token = security.get('token')
             self.path = security.get('path')
+            self.token = security.get('token')
 
         headers = {
             'Content-Type': 'application/json',
