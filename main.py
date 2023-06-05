@@ -34,7 +34,7 @@ class MainWindow:
 
         # Выбрать аудиторию
         self.auditoriums = CTkComboBox(master=self._container, values=list(AUDI.keys()), font=("Courier", 20, "bold"))
-        self.auditoriums.pack(pady=10)
+        self.auditoriums.pack(pady=5)
 
         # Действие для обработки
         # Бесконечное функция на подсчёт людей
@@ -53,14 +53,26 @@ class MainWindow:
         self.button_stat = ctk.CTkButton(master=self._container, text="Получить статистику", command=self.add_statistic)
         self.button_stat.pack(pady=5)
 
+
+        self.aud = ctk.StringVar()
+        self.aud.set("317")
+        self.labelaudit = ctk.CTkLabel(master=self._container, textvariable=self.aud)
+        self.labelaudit.pack(pady=5)
+
+        self.text = ctk.StringVar()
+        self.text.set("Количество людей: ")
+        self.labeltext = ctk.CTkLabel(master=self._container, textvariable=self.text)
+        self.labeltext.pack(pady=5)
+
         self.camera_stream = ctk.CTkFrame(master=self._window)
         self.camera_stream.pack(padx=5, pady=5)
+
         self.labelmain = ctk.CTkLabel(master=self.camera_stream, text="", width=480, height=480)
         self.labelmain.grid()
 
 
     def get_imgtk(self, frame):
-        #frame = cv2.resize(frame, (640, 640))
+        frame = cv2.resize(frame, (frame.shape[1] // 2 * 3, frame.shape[0] // 2 * 3))
         normal_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
         img = Image.fromarray(normal_frame)
         imgtk = ImageTk.PhotoImage(image=img)
@@ -107,11 +119,15 @@ class MainWindow:
             if not self.current_frame is None:
                 cnt_people = count_people_on_audit(self.current_frame)
 
+                self.text.set("Количество людей: {}".format(cnt_people))
+
                 current_date = get_current_datetime()
                 if self.auditorium == "Камера устройства":
-                    audit = 217
+                    audit = 205
                 else:
                     audit = self.auditorium
+
+                self.aud.set("{}".format(audit))
 
                 object = {
                     'base/state/datetime': current_date,
